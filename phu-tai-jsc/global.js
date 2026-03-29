@@ -1,1 +1,1 @@
-console.log("Phu Tai JSC — Global JS loaded ✅");
+console.log("Phu Tai JSC — Global JS loaded ✅ Auto update working");
