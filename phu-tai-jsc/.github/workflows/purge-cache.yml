@@ -1,0 +1,26 @@
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge jsDelivr CDN cache
+        run: |
+          curl -X GET "https://purge.jsdelivr.net/gh/ECH0-STUDIO/webflow-scripts@main/phu-tai-jsc/global.js"
+          curl -X GET "https://purge.jsdelivr.net/gh/ECH0-STUDIO/webflow-scripts@main/phu-tai-jsc/pages/home.js"
+```
+
+Then **commit + sync** the same way as before with message:
+```
+add auto-purge workflow
+```
+
+---
+
+After this, your full workflow forever will be:
+```
+Edit JS in VS Code → Commit → Sync → CDN updates in ~1 min → Webflow live ✅
