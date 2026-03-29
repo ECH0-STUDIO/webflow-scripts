@@ -12,3 +12,6 @@ jobs:
         run: |
           curl -X GET "https://purge.jsdelivr.net/gh/ECH0-STUDIO/webflow-scripts@main/phu-tai-jsc/global.js"
           curl -X GET "https://purge.jsdelivr.net/gh/ECH0-STUDIO/webflow-scripts@main/phu-tai-jsc/pages/home.js"
+          sleep 5
+          curl -X GET "https://cdn.jsdelivr.net/gh/ECH0-STUDIO/webflow-scripts@main/phu-tai-jsc/global.js"
+          curl -X GET "https://cdn.jsdelivr.net/gh/ECH0-STUDIO/webflow-scripts@main/phu-tai-jsc/pages/home.js"
